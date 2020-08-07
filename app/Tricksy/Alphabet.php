@@ -5,7 +5,7 @@
 // Create a class Alphabet in the App\Tricksy namespace, that implements the Iterator interface and then check that it works using foreach.
 
 // Hint: PHP has a function chr that creates a character string from a character code. Remember, A is 65.
-
+declare(strict_types=1);
 namespace App\Tricksy;
 use Iterator;
 
@@ -47,6 +47,7 @@ class Alphabet implements Iterator
     public function valid() : bool
     {
         // Checks if current position is valid
+        // dd($this->position >= 65 && $this->position <= 90);
         return $this->position >= 65 && $this->position <= 90;
     }   
 }

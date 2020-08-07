@@ -9,7 +9,7 @@ class Challenges
         echo "\nTricksy Challenges\n";
 
         $this->alphabet();
-        // $this->range();
+        $this->range();
     }
 
     public function alphabet()
